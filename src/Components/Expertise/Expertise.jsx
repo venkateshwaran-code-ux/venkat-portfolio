@@ -13,7 +13,7 @@ const Expertise = () => {
       <div className="expertise-container">
         {/* Left Content */}
         <div className="expertise-content">
-          <span className="expertise-tag">My Expertise</span>
+          <span className="expertise-tag">My Expertises</span>
           <h2 className="expertise-title">
             What’s Included in My Design & Development Skills
           </h2>
