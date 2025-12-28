@@ -1,0 +1,80 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+.Contact-container {
+  height: 620px;
+  width: 100%;
+  background: radial-gradient(circle, pink, blue);
+  display: flex;
+  padding-top: 1px;
+  padding-left: 350px;
+  gap: 9px;
+  text-align: center;
+}
+
+.contact-form {
+  width: 600px;
+  padding-top: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-color: #38d333;
+  height: 500px;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #111827;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  color: rgb(239, 239, 239);
+  text-align: center;
+  font-size: 14px;
+  background-color: #38d333;
+  padding: 5px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+.map-container {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border-bottom: #744eff;
+}

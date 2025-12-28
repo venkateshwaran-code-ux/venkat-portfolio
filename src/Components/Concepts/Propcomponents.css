@@ -1,0 +1,28 @@
+/* Parent container */
+.Technologies-included {
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center; /* Vertical center */
+  gap: 5px; /* Space between text and image */
+  border-radius: 8px;
+  background-color: #f5f5f5; /* Light background */
+  flex-wrap: wrap;
+  width: auto;
+}
+
+/* Technology name */
+.Technologies {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+/* Technology image */
+.Technologies-images {
+  width: 30px;
+  height: 33px;
+  object-fit: contain;
+}

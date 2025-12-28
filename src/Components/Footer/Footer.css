@@ -1,0 +1,75 @@
+.Footer-area {
+  background: linear-gradient(135deg, #d933b2, #8e2de2, #4a00e0);
+  height: 220px;
+  width: 100%;
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* Menu */
+.Footer-content {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.Footer-content li a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+
+/* Separator automatically */
+.Footer-content li:not(:last-child)::after {
+  content: "|";
+  margin-left: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Animated text */
+.super-text {
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.3px;
+  animation: softFade 3.5s ease-in-out infinite;
+}
+
+@keyframes softFade {
+  0% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.85;
+  }
+}
+
+/* Social icons */
+.Footer-socials {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.Footer-socials a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Footer-socials a:hover {
+  transform: scale(1.2);
+  color: #ffe6ff;
+}

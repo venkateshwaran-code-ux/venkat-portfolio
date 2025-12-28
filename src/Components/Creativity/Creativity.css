@@ -1,0 +1,131 @@
+/* Section Wrapper */
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.creativity-wrapper {
+  background: linear-gradient(270deg, #7a00df, #b5179e, #4361ee);
+  background-size: 400% 800%;
+  height: 800px;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Layout */
+.creativity-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Image */
+.creativity-image {
+  flex: 1;
+  animation: fadeLeft 1s ease forwards;
+}
+
+.third-section-image {
+  padding-top: 90px;
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Content */
+.creativity-content {
+  flex: 1;
+  animation: fadeRight 1s ease forwards;
+}
+
+.creativity-tag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.creativity-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.creativity-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+/* Button */
+.creativity-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #bc2fa0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.creativity-btn:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .creativity-container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .creativity-title {
+    font-size: 26px;
+  }
+
+  .third-section-image {
+    max-width: 360px;
+  }
+}

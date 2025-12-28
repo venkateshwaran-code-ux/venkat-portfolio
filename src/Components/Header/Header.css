@@ -1,0 +1,40 @@
+.Venkat-hire {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  height: 60px;
+  width: 100%;
+  background-color: #a016e0;
+  color: beige;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 25px;
+}
+
+.Portfolio-fnt {
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: lighter;
+}
+.V-logo {
+  color: rgb(255, 255, 255);
+  padding: 2px;
+  border-style: dotted;
+  border-radius: 5px;
+}
+.Sploper {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #9a47e7;
+  color: whitesmoke;
+  padding: 8px 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(132, 69, 214);
+  cursor: pointer;
+}
+
+.Sploper:hover {
+  background-color: rgb(0, 2, 128);
+}
