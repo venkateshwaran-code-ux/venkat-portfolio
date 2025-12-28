@@ -1,6 +1,6 @@
 import Propcomponents from "../Concepts/Propcomponents";
 import "../Main/Main.css";
-import venkatLogo from "../Main/venkat-logo.png";
+import logo from "../Main/venkat-logo.png";
 import htmlimg from "../../assets/html.png";
 import cssimg from "../../assets/css.jpg";
 import javascriptimg from "../../assets/javascript.png";
@@ -49,7 +49,7 @@ function Main() {
 
       {/* Center Logo / Visual */}
       <div className="Logo-area">
-        <img src={venkatLogo} alt="venkatLogo" className="venkatLogo" />
+        <img src={logo} alt="venkatLogo" className="venkatLogo" />
       </div>
 
       {/* Right Navigation */}
