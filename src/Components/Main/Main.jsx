@@ -1,6 +1,6 @@
 import Propcomponents from "../Concepts/Propcomponents";
 import "../Main/Main.css";
-import logo from "./venkat-logo.png"; // ✔ Use ./ for current folder
+import logo from "../../assets/Venkat-logo.png"; // ✔ Use ./ for current folder
 import htmlimg from "../../assets/html.png";
 import cssimg from "../../assets/css.jpg";
 import javascriptimg from "../../assets/javascript.png";
