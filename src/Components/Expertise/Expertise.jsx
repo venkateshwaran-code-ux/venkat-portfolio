@@ -1,4 +1,4 @@
-import "./expertise.css";
+import "../Expertise/Expertise.css";
 
 const skills = [
   { name: "Web Design", percent: 70 },
