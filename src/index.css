@@ -1,5 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Stunning heading animations */
+@keyframes titleWaveShine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes textGradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes elasticPulse {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(1.1);
+  }
+  50% {
+    transform: scaleY(0.95);
+  }
+  75% {
+    transform: scaleY(1.05);
+  }
+}
+
+@keyframes textShadowAnimation {
+  0% {
+    text-shadow: 0 0 10px rgba(124, 58, 237, 0.3),
+      0 0 20px rgba(192, 38, 211, 0);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(124, 58, 237, 0.6),
+      0 0 40px rgba(192, 38, 211, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(124, 58, 237, 0.3),
+      0 0 20px rgba(192, 38, 211, 0);
+  }
+}
+
+/* Apply gradient animations to main headings */
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+/* Hero and major titles get special treatment */
+.Hero-name,
+.about-subtitle,
+.expertise-title,
+.group-title,
+.service-title {
+  background: linear-gradient(90deg, #6b21a8, #c026d3, #7c3aed, #6b21a8);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: textGradientShift 4s ease infinite;
 }

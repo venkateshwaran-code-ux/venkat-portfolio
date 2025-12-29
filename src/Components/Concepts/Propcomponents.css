@@ -1,28 +1,96 @@
+/* Keyframe animations for tech icons */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bobbing {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 /* Parent container */
 .Technologies-included {
-  padding-top: 25px;
-  padding-left: 10px;
-  padding-bottom: 15px;
+  padding: clamp(10px, 2vw, 25px) clamp(8px, 2.5vw, 10px) clamp(10px, 2vw, 15px);
   display: flex;
-  align-items: center; /* Vertical center */
-  gap: 5px; /* Space between text and image */
-  border-radius: 8px;
-  background-color: #f5f5f5; /* Light background */
   flex-wrap: wrap;
-  width: auto;
+  align-items: center;
+  gap: clamp(3px, 1.5vw, 5px);
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Technology wrapper for stagger effect */
+.Technologies-included > div {
+  animation: bounceIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.Technologies-included > div:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.Technologies-included > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.Technologies-included > div:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.Technologies-included > div:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.Technologies-included > div:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.Technologies-included > div:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.Technologies-included > div:nth-child(7) {
+  animation-delay: 0.7s;
 }
 
 /* Technology name */
 .Technologies {
-  font-size: 12px;
+  font-size: clamp(10px, 2.5vw, 12px);
   font-weight: bold;
   margin: 0;
   color: #333;
+  white-space: nowrap;
 }
 
 /* Technology image */
 .Technologies-images {
-  width: 30px;
-  height: 33px;
+  width: clamp(24px, 5vw, 30px);
+  height: clamp(26px, 5vw, 33px);
   object-fit: contain;
+  transition: transform 0.3s ease;
+  animation: bobbing 2s ease-in-out infinite;
+}
+
+.Technologies-images:nth-child(1) {
+  animation-delay: 0s;
+}
+.Technologies-images:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.Technologies-images:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@media (hover: hover) {
+  .Technologies-images:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
 }

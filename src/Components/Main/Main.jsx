@@ -21,13 +21,22 @@ function Main() {
         </p>
 
         <p className="hero-desc">
-          I am learning and growing as a Front-End UI/UX Developer, with
-          hands-on experience in HTML, CSS, JavaScript, Bootstrap, and React,
-          and a strong interest in creating clean and user-friendly web designs.
+          Software professional with experience in banking and financial
+          services, strongly interested in building a career as a Frontend
+          Developer. Hands-on experience in developing responsive and user
+          friendly web interfaces using HTML, CSS, JavaScript, and React. Highly
+          motivated, dedicated, and eager to contribute skills, learn
+          continuously, and deliver quality frontend solutions in a growth
+          oriented organization.
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">View Projects</button>
+          <button
+            className="primary-btn"
+            onClick={() => (window.location.href = "#contact")}
+          >
+            Contact Me
+          </button>
         </div>
         <br />
         <br />
@@ -52,23 +61,8 @@ function Main() {
         <img src={logo} alt="venkatLogo" className="venkatLogo" />
       </div>
 
-      {/* Right Navigation */}
-      <div className="Navbar">
-        <ul className="Navbar-content">
-          <li className="">
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+      {/* Gradient Featured Area */}
+      <div className="featured-area"></div>
     </div>
   );
 }

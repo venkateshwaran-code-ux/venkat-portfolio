@@ -6,8 +6,15 @@
 .creativity-wrapper {
   background: linear-gradient(270deg, #7a00df, #b5179e, #4361ee);
   background-size: 400% 800%;
-  height: 800px;
+  min-height: auto;
+  padding: clamp(40px, 8vw, 80px) clamp(15px, 5vw, 20px);
   animation: gradientMove 12s ease infinite;
+}
+
+@media (min-width: 768px) {
+  .creativity-wrapper {
+    height: 800px;
+  }
 }
 
 @keyframes gradientMove {
@@ -27,45 +34,55 @@
   max-width: 1200px;
   margin: auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: clamp(30px, 5vw, 50px);
+}
+
+@media (min-width: 768px) {
+  .creativity-container {
+    flex-direction: row;
+  }
 }
 
 /* Image */
 .creativity-image {
   flex: 1;
+  width: 100%;
   animation: fadeLeft 1s ease forwards;
 }
 
 .third-section-image {
-  padding-top: 90px;
+  padding-top: clamp(30px, 5vw, 90px);
   width: 100%;
-  max-width: 480px;
+  max-width: clamp(300px, 80vw, 480px);
+  height: auto;
 }
 
 /* Content */
 .creativity-content {
   flex: 1;
+  width: 100%;
   animation: fadeRight 1s ease forwards;
 }
 
 .creativity-tag {
   display: inline-block;
-  font-size: 14px;
+  font-size: clamp(12px, 3vw, 14px);
   font-weight: 600;
   color: #ffffff;
   margin-bottom: 12px;
 }
 
 .creativity-title {
-  font-size: 32px;
+  font-size: clamp(24px, 6vw, 32px);
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .creativity-text {
-  font-size: 15px;
+  font-size: clamp(13px, 3.5vw, 15px);
   line-height: 1.7;
   color: #ffffff;
   margin-bottom: 16px;
@@ -74,8 +91,8 @@
 /* Button */
 .creativity-btn {
   margin-top: 20px;
-  padding: 12px 28px;
-  font-size: 15px;
+  padding: clamp(10px, 2.5vw, 12px) clamp(20px, 4vw, 28px);
+  font-size: clamp(13px, 3.5vw, 15px);
   font-weight: 600;
   color: #ffffff;
   background-color: #bc2fa0;
@@ -85,9 +102,16 @@
   transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-.creativity-btn:hover {
+.creativity-btn:active {
   background-color: #9333ea;
-  transform: translateY(-2px);
+  transform: translateY(-1px);
+}
+
+@media (hover: hover) {
+  .creativity-btn:hover {
+    background-color: #9333ea;
+    transform: translateY(-2px);
+  }
 }
 
 /* Animations */
